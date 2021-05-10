@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
@@ -29,6 +30,7 @@ public class ConvertirTasa implements Task {
                 WaitUntil.the(OPCION_NEGOCIOS, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(OPCION_NEGOCIOS),
                 Click.on(OPCION_HERRAMIENTAS),
+                Scroll.to(OPCION_CONVERSOR_TASAS),
                 Click.on(OPCION_CONVERSOR_TASAS),
                 //Click.on(CALCULAR_NOMINAL_EFECTIVA),
                 Enter.theValue(t.getIngresaTasa()).into(INGRESAR_TASA),
