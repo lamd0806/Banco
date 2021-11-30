@@ -20,7 +20,7 @@ apply plugin: 'net.serenity-bdd.aggregator'
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-group 'co.com.andrea.travelocity'
+
 version '1.0-SNAPSHOT'
 
 tasks.withType(Test){

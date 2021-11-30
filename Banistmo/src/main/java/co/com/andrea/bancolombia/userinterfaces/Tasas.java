@@ -13,4 +13,5 @@ public class Tasas {
     public static final Target OPCION_HERRAMIENTAS = Target.the("Opcion Herramientas").locatedBy("//*[@id='menu-top']/div/div/div/ul/li[4]/a");
     public static final Target OPCION_NEGOCIOS = Target.the("Opcion Negocios").locatedBy("//*[@id='header-pymes']");
     public static final Target MENSAJE_RESULTADO_BUSQUEDA = Target.the("Resultado Busqueda").located(By.id("respuesta"));
+public static final Target BTN_PAGINA_PRINCIPAL= Target.the("Botón Página principal").locatedBy("//*/button[@class='modal-prehome-fenix-header-info-button-home btn-modal']");
 }

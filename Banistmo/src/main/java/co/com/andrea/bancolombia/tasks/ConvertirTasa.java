@@ -27,6 +27,8 @@ public class ConvertirTasa implements Task {
     public <T extends Actor> void performAs(T actor) {
         Tasa t=datosTasa.get(0);
         actor.attemptsTo(
+                WaitUntil.the(BTN_PAGINA_PRINCIPAL,isVisible()).forNoMoreThan(10).seconds(),
+                Click.on(BTN_PAGINA_PRINCIPAL),
                 WaitUntil.the(OPCION_NEGOCIOS, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(OPCION_NEGOCIOS),
                 Click.on(OPCION_HERRAMIENTAS),
